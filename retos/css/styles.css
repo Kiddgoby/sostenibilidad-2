@@ -1,0 +1,517 @@
+/* ========================================
+   VARIABLES Y ESTILOS GLOBALES
+   ======================================== */
+
+:root {
+    --dark-bg: #0a0a0a;
+    --secondary-bg: #1a1a1a;
+    --tertiary-bg: #2a2a2a;
+    --text-light: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --accent-danger: #ff4444;
+    --accent-warning: #ffaa00;
+    --accent-success: #00cc66;
+    --accent-info: #00ccff;
+    --border-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: white;
+}
+
+p {
+    color: var(--text-light);
+}
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+
+.navbar {
+    background-color: var(--dark-bg) !important;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    color: var(--text-muted) !important;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-danger);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 68, 68, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.hero-section .lead {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--dark-bg);
+    transform: translateY(-2px);
+}
+
+.hero-visual {
+    position: relative;
+    height: 500px;
+}
+
+.gradient-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 68, 68, 0.2) 0%, rgba(0, 204, 102, 0.2) 100%);
+    border-left: 1px solid var(--border-color);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
+
+main {
+    background-color: var(--dark-bg);
+}
+
+.bg-dark {
+    background-color: var(--secondary-bg) !important;
+}
+
+.bg-secondary {
+    background-color: var(--tertiary-bg) !important;
+}
+
+.bg-black {
+    background-color: var(--dark-bg) !important;
+}
+
+/* ========================================
+   TABS
+   ======================================== */
+
+.nav-tabs {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-muted) !important;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-tabs .nav-link:hover {
+    color: white !important;
+    border-bottom-color: var(--accent-danger);
+}
+
+.nav-tabs .nav-link.active {
+    color: white !important;
+    border-bottom-color: var(--accent-danger);
+    background-color: transparent;
+}
+
+/* ========================================
+   IMPACT BOXES
+   ======================================== */
+
+.impact-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.impact-box:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent-danger);
+    transform: translateY(-5px);
+}
+
+.impact-box h5 {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.impact-box p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+.impact-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.impact-box li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.impact-box li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent-danger);
+    font-weight: bold;
+}
+
+/* ========================================
+   CARD
+   ======================================== */
+
+.card {
+    background-color: var(--tertiary-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* ========================================
+   BIBLIOGRAFÍA
+   ======================================== */
+
+.bibliography-item {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent-danger);
+    padding: 2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.bibliography-item:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    transform: translateX(5px);
+}
+
+.bibliography-item h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.bibliography-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bibliography-item li {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.bibliography-item li:last-child {
+    border-bottom: none;
+}
+
+.bibliography-item strong {
+    color: white;
+}
+
+.text-light-emphasis {
+    color: var(--text-light) !important;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    background-color: var(--dark-bg) !important;
+    border-top: 1px solid var(--border-color);
+    padding: 2rem 0;
+}
+
+footer p {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 992px) {
+    .hero-section {
+        min-height: 500px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .hero-section .row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 0.75rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .impact-box {
+        padding: 1.5rem;
+    }
+
+    .impact-box h5 {
+        font-size: 1rem;
+    }
+
+    .impact-box p {
+        font-size: 0.9rem;
+    }
+
+    .bibliography-item {
+        padding: 1.5rem;
+    }
+
+    .bibliography-item h5 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 400px;
+        padding: 2rem 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section .lead {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .nav-tabs {
+        flex-wrap: wrap;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+
+    .impact-box {
+        padding: 1rem;
+    }
+
+    .impact-box h5 {
+        font-size: 0.95rem;
+    }
+
+    .impact-box p {
+        font-size: 0.85rem;
+    }
+
+    .impact-box li {
+        font-size: 0.85rem;
+    }
+
+    .bibliography-item {
+        padding: 1rem;
+    }
+
+    .bibliography-item h5 {
+        font-size: 1rem;
+    }
+
+    .bibliography-item li {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   UTILIDADES
+   ======================================== */
+
+.border-danger {
+    border-color: var(--accent-danger) !important;
+}
+
+.border-secondary {
+    border-color: var(--border-color) !important;
+}
+
+.text-danger {
+    color: var(--accent-danger) !important;
+}
+
+.text-warning {
+    color: var(--accent-warning) !important;
+}
+
+.text-success {
+    color: var(--accent-success) !important;
+}
+
+.text-info {
+    color: var(--accent-info) !important;
+}
+
+.text-light {
+    color: var(--text-light) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Scroll Bar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-danger);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-warning);
+}

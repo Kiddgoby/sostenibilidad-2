@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos Sociales - Análisis Integral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark sticky-top border-bottom border-secondary">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand fw-bold fs-5" href="#inicio">
+                <span class="text-danger me-2">◆</span>RETOS SOCIALES
+            </a>
+            <div class="d-flex gap-4">
+                <a href="#contenido" class="nav-link text-light">Contenido</a>
+                <a href="#bibliografia" class="nav-link text-light">Bibliografía</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container-fluid px-0">
+            <div class="row g-0">
+                <div class="col-lg-6 d-flex align-items-center px-5 py-5">
+                    <div>
+                        <h1 class="display-3 fw-bold text-white mb-4">Retos Sociales Globales</h1>
+                        <p class="lead text-light mb-4">Análisis integral del impacto en personas, empresas y economía. Soluciones implementadas y medidas necesarias.</p>
+                        <a href="#contenido" class="btn btn-outline-light btn-lg">Explorar Análisis</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-visual">
+                    <div class="gradient-box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contenido Principal -->
+        <section id="contenido" class="py-5 bg-dark">
+            <div class="container px-5">
+                <div class="mb-5">
+                    <h2 class="display-5 fw-bold text-white mb-2">Análisis de Impacto</h2>
+                    <div class="border-top border-danger" style="width: 60px; height: 3px;"></div>
+                </div>
+
+                <!-- Tabs para los 4 retos -->
+                <ul class="nav nav-tabs nav-dark mb-5" id="retosTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active text-light" id="desigualdad-tab" data-bs-toggle="tab" data-bs-target="#desigualdad" type="button">Desigualdad Social</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-light" id="pobreza-tab" data-bs-toggle="tab" data-bs-target="#pobreza" type="button">Pobreza</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-light" id="educacion-tab" data-bs-toggle="tab" data-bs-target="#educacion" type="button">Educación</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-light" id="sanidad-tab" data-bs-toggle="tab" data-bs-target="#sanidad" type="button">Sanidad</button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="retosTabContent">
+                    <!-- Desigualdad Social -->
+                    <div class="tab-pane fade show active" id="desigualdad" role="tabpanel">
+                        <div class="card bg-secondary border-0">
+                            <div class="card-body p-5">
+                                <h3 class="text-white mb-4">Desigualdad Social</h3>
+                                
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-danger fw-bold mb-3">Impacto sobre las Personas</h5>
+                                            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sunt dolores a dolore dolor expedita accusantium nostrum esse ut corporis unde exercitationem, consequuntur quia fuga, minus praesentium culpa totam asperiores!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-danger fw-bold mb-3">Impacto sobre las Empresas</h5>
+                                            <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum veniam, architecto quo aut maiores commodi aspernatur id qui corrupti ex explicabo quisquam animi iure accusamus reiciendis quod suscipit error optio.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-danger fw-bold mb-3">Impacto sobre la Actividad Económica</h5>
+                                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ex exercitationem blanditiis enim aliquam suscipit voluptatibus illo placeat rem nam! Dicta voluptatibus iure blanditiis laborum sapiente, libero explicabo nostrum atque.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-danger fw-bold mb-3">Medidas Tomadas</h5>
+                                            <ul class="text-light">
+                                                <li>.....</li>
+                                                <li>.....</li>
+                                                <li>.....</li>
+                                                <li>.....</li>
+                                                <li>.....</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="impact-box">
+                                            <h5 class="text-danger fw-bold mb-3">Medidas que se Deberían Tomar</h5>
+                                            <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo autem, explicabo laudantium suscipit nemo provident soluta, ducimus nisi beatae aliquid excepturi vitae praesentium dolorum nihil. Eos velit cumque quis iusto?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pobreza -->
+                    <div class="tab-pane fade" id="pobreza" role="tabpanel">
+                        <div class="card bg-secondary border-0">
+                            <div class="card-body p-5">
+                                <h3 class="text-white mb-4">Pobreza</h3>
+                                
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-warning fw-bold mb-3">Impacto sobre las Personas</h5>
+                                            <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti aliquid iste dolore qui facere perferendis veniam nulla eos aspernatur, animi odit accusamus veritatis possimus distinctio? Id blanditiis consectetur fuga iure!.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-warning fw-bold mb-3">Impacto sobre las Empresas</h5>
+                                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quasi officiis hic reiciendis obcaecati dignissimos, voluptas cum non itaque eos cumque quidem iusto eum eligendi error corporis iure minima ut!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-warning fw-bold mb-3">Impacto sobre la Actividad Económica</h5>
+                                            <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, at eum! Repudiandae doloremque quisquam pariatur quibusdam adipisci quidem nemo. Perferendis officiis impedit, libero laudantium excepturi dolore similique minus? Deserunt, ipsum?.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-warning fw-bold mb-3">Medidas Tomadas</h5>
+                                            <ul class="text-light">
+                                                <li>.....</li>
+                                                <li>.....</li>
+                                                <li>.....</li>
+                                                <li>.....</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="impact-box">
+                                            <h5 class="text-warning fw-bold mb-3">Medidas que se Deberían Tomar</h5>
+                                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, atque officia consequatur cupiditate rem, error reprehenderit esse facilis et voluptate in ipsam voluptas. Reiciendis obcaecati itaque, adipisci sunt in nostrum!.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- discriminacion -->
+                    <div class="tab-pane fade" id="educacion" role="tabpanel">
+                        <div class="card bg-secondary border-0">
+                            <div class="card-body p-5">
+                                <h3 class="text-white mb-4">Discriminacion</h3>
+                                
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-success fw-bold mb-3">Impacto sobre las Personas</h5>
+                                            <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae tenetur enim eos rerum recusandae similique ipsam alias quisquam mollitia. Iste quis repudiandae maxime blanditiis delectus sed odit nostrum beatae tenetur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-success fw-bold mb-3">Impacto sobre las Empresas</h5>
+                                            <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ducimus est praesentium, molestias corporis laudantium repellat similique odio illum nisi labore natus aperiam blanditiis commodi totam. Itaque blanditiis temporibus illo?</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-success fw-bold mb-3">Impacto sobre la Actividad Económica</h5>
+                                            <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga soluta id dolor voluptatibus cupiditate. Assumenda dolor tempora iure et illum alias rerum quia corporis magni repudiandae. At libero maxime repudiandae?</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-success fw-bold mb-3">Medidas Tomadas</h5>
+                                            <ul class="text-light">
+                                                <li>.....</li>
+                                                <li>.....</li>
+                                                <li>.....</li>
+                                                <li>.....</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="impact-box">
+                                            <h5 class="text-success fw-bold mb-3">Medidas que se Deberían Tomar</h5>
+                                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet enim dolorum, omnis ipsum nostrum dolor, repellendus repellat incidunt inventore minus veniam exercitationem perspiciatis aut quas laboriosam quasi numquam fugiat a.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sanidad -->
+                    <div class="tab-pane fade" id="sanidad" role="tabpanel">
+                        <div class="card bg-secondary border-0">
+                            <div class="card-body p-5">
+                                <h3 class="text-white mb-4">Acceso a la Sanidad / Discriminación</h3>
+                                
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-info fw-bold mb-3">Impacto sobre las Personas</h5>
+                                            <p class="text-light">La discriminación y la falta de acceso a la sanidad son una amenaza para la salud pública. Las personas mueren por enfermedades prevenibles. La discriminación (por raza, edad, sexo, etc.) socava la dignidad y el derecho a la salud.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-info fw-bold mb-3">Impacto sobre las Empresas</h5>
+                                            <p class="text-light">Una fuerza laboral enferma o con acceso limitado a la sanidad es menos productiva. La discriminación en el lugar de trabajo puede llevar a litigios y dañar la reputación. Las empresas asumen mayores costes sanitarios y de bajas laborales.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-info fw-bold mb-3">Impacto sobre la Actividad Económica</h5>
+                                            <p class="text-light">Las desigualdades en salud son injustas y evitables, generando un gasto mayor a largo plazo (hasta cuatro veces mayor que con cobertura universal). La falta de acceso limita la participación plena de las personas en la economía.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="impact-box">
+                                            <h5 class="text-info fw-bold mb-3">Medidas Tomadas</h5>
+                                            <ul class="text-light">
+                                                <li>Compromisos por cobertura sanitaria universal</li>
+                                                <li>Eliminación de barreras legales y discriminación</li>
+                                                <li>Promoción de equidad en salud</li>
+                                                <li>Alianzas estratégicas para mejorar acceso</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="impact-box">
+                                            <h5 class="text-info fw-bold mb-3">Medidas que se Deberían Tomar</h5>
+                                            <p class="text-light">Garantizar el acceso universal a una asistencia sanitaria de buena calidad sin distinción. Abordar la discriminación por edad, raza, género, etc. en la atención sanitaria. Trabajar en distintos sectores (educación, vivienda) para mejorar el acceso de las poblaciones vulnerables y fortalecer sistemas de salud pública.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bibliografía -->
+        <section id="bibliografia" class="py-5 bg-black">
+            <div class="container px-5">
+                <div class="mb-5">
+                    <h2 class="display-5 fw-bold text-white mb-2">Bibliografía</h2>
+                    <div class="border-top border-danger" style="width: 60px; height: 3px;"></div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="bibliography-item">
+                            <h5 class="text-light mb-3">Organizaciones Internacionales</h5>
+                            <ul class="text-light-emphasis">
+                                <li><strong>Naciones Unidas (ONU)</strong> - Objetivos de Desarrollo Sostenible (ODS)</li>
+                                <li><strong>Banco Mundial</strong> - Reportes sobre pobreza y desarrollo económico</li>
+                                <li><strong>UNESCO</strong> - Informes sobre educación y acceso a la educación</li>
+                                <li><strong>OMS</strong> - Organización Mundial de la Salud, cobertura sanitaria universal</li>
+                                <li><strong>CEPAL</strong> - Comisión Económica para América Latina y el Caribe</li>
+                                <li><strong>OIT</strong> - Organización Internacional del Trabajo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bibliography-item">
+                            <h5 class="text-light mb-3">Fuentes Académicas y Reportes</h5>
+                            <ul class="text-light-emphasis">
+                                <li>BBVA Research - Desigualdad económica y social</li>
+                                <li>FMI - Fondo Monetario Internacional, análisis de desigualdad</li>
+                                <li>PNUD - Programa de las Naciones Unidas para el Desarrollo</li>
+                                <li>Médicos del Mundo - Acceso a la salud y discriminación</li>
+                                <li>Plan International - Acceso a educación y derechos</li>
+                                <li>Fundaciones especializadas en desarrollo sostenible</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-4 border-top border-secondary">
+                    <p class="text-light-emphasis small">
+                        <strong>Nota:</strong> Este análisis se basa en información de organismos internacionales reconocidos, reportes académicos y estudios de desarrollo sostenible. Los datos y conclusiones reflejan el estado actual del conocimiento sobre estos retos sociales globales.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-top border-secondary py-4">
+        <div class="container px-5">
+            <div class="text-center text-light-emphasis small">
+                <p>&copy; 2024 Retos Sociales. Análisis integral de impacto social y económico.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
